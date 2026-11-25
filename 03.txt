@@ -1,0 +1,20 @@
+1. Um tipo de dados é uma maneira usada pela linguagem de categorizar e interpretar diferentes dados. Eles servem para previnir operações inválidas, especializar dados por tamanho, melhorar o desempenho do programa, etc.
+
+
+2. Um erro acontecerá ao tentar compilar o programa, pois há uma operação de subtração sendo feita com operandos de tipos inválidos.
+
+O operando 100 é um int, enquanto o operando "10" é uma referência a um char.
+
+erro.c: In function ‘main’:
+erro.c:3:30: error: invalid operands to binary - (have ‘int’ and ‘char *’)
+    3 |     printf("Soma = %d\n", 100-"10");
+      |                              ^
+      |                              |
+      |                              char *
+
+O erro ocorre porque a operação de subtração não pode ser feita com os tipos int e char *.
+
+
+3. 
+
+
